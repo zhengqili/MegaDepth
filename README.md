@@ -19,12 +19,12 @@ This is an code of the algorithm described in "MegaDepth: Learning Single-View D
 #### Evaluation on the MegaDepth test splits:
 * Download MegaDepth V1 dataset from project website: http://www.cs.cornell.edu/projects/megadepth/.
 * Download pretrained model (specific for MD dataset) from http://www.cs.cornell.edu/projects/megadepth/dataset/models/best_vanila_net_G.pth and put it in "checkpoints/test_local/best_vanila_net_G.pth" 
-* Download test list files from ???, it should include two subfolders corresponding to images with landscape and portrait orientations.
-* To compute scale invarance RMSE on MD testset, change the variable "dataset_root" in python file "rmse_error_main.py" to the root directory of MegaDepth_v1 folder, and change variable "test_list_dir_l" and "test_list_dir_p" to corresponding paths of test lists of images with landscape and portrait orientations, and run:
+* Download test list files from http://www.cs.cornell.edu/projects/megadepth/dataset/data_lists/test_lists.tar.gz, it should include two folders corresponding to images with landscape and portrait orientations.
+* To compute scale invarance RMSE on MD testset, change the variable "dataset_root" in python file "rmse_error_main.py" to the root directory of MegaDepth_v1 folder, and change variable "test_list_dir_l" and "test_list_dir_p" to corresponding folder paths of test lists, and run:
 ```bash
     python rmse_error_main.py
 ```
-* To compute Structure from Motion Disagreement Rate (SDR), change the variable "dataset_root" in python file "rmse_error_main.py" to the root directory of MegaDepth_v1 folder, and change variable "test_list_dir_l" and "test_list_dir_p" to corresponding paths of test lists of images with landscape and portrait orientations, and run:
+* To compute Structure from Motion Disagreement Rate (SDR), change the variable "dataset_root" in python file "rmse_error_main.py" to the root directory of MegaDepth_v1 folder, and change variable "test_list_dir_l" and "test_list_dir_p" to corresponding folder paths of test lists, and run:
 ```bash
     python SDR_compute.py
 ```
