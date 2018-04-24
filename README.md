@@ -1,5 +1,5 @@
 # MegaDepth: Learning Single-View Depth Prediction from Internet Photos
-===========================
+
 
 This is an code of the algorithm described in "MegaDepth: Learning Single-View Depth Prediction from Internet Photos, Z. Li and N. Snavely, CVPR 2018". The code skeleton is based on "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix". If you use our code or models for academic purposes, please consider citing:
 
