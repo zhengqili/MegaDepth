@@ -1,5 +1,7 @@
 # MegaDepth: Learning Single-View Depth Prediction from Internet Photos
 
+<img src="https://github.com/lixx2938/MegaDepth/blob/master/demo.jpg" width="300"/> <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo.png" width="300"/>
+
 
 This is a code of the algorithm described in "MegaDepth: Learning Single-View Depth Prediction from Internet Photos, Z. Li and N. Snavely, CVPR 2018". The code skeleton is based on "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix". If you use our code or models for academic purposes, please consider citing:
 
@@ -23,9 +25,6 @@ This is a code of the algorithm described in "MegaDepth: Learning Single-View De
     python demo.py
 ```
 You should see an inverse depth prediction saved as demo.png from an original photo demo.jpg. If you want to use RGB maps for visualization, like the figures in our paper, you have to install/run semantic segmentation from https://github.com/kazuto1011/pspnet-pytorch trained on ADE20K to mask out sky, because inconsistent depth prediction of unmasked sky will not make RGB visualization resonable.
-
-<img src="https://github.com/lixx2938/MegaDepth/blob/master/demo.jpg" width="200"/> <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo.png" width="200"/>
-
 
 
 #### Evaluation on the MegaDepth test splits:
