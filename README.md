@@ -15,7 +15,7 @@ This is a code of the algorithm described in "MegaDepth: Learning Single-View De
 * The code was written in Pytorch and Python 2.7, but it should be easy to adapt it to Python 3 version if needed.
 * You might need skimage, h5py libraries installed for python before running the code.
 
-#### Evaluation on Internet Photos:
+#### Single-view depth prediction on any Internet photo:
 * Download pretrained model from: http://www.cs.cornell.edu/projects/megadepth/dataset/models/best_generalization_net_G.pth and put it in "checkpoints/test_local/best_generalization_net_G.pth
 * In python file "models/HG_model.py", in init function, change to "model_parameters = self.load_network(model, 'G', 'best_generalization')"
 * run demo code 
