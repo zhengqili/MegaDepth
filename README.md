@@ -1,7 +1,7 @@
 # MegaDepth: Learning Single-View Depth Prediction from Internet Photos
 
 
-This is an code of the algorithm described in "MegaDepth: Learning Single-View Depth Prediction from Internet Photos, Z. Li and N. Snavely, CVPR 2018". The code skeleton is based on "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix". If you use our code or models for academic purposes, please consider citing:
+This is a code of the algorithm described in "MegaDepth: Learning Single-View Depth Prediction from Internet Photos, Z. Li and N. Snavely, CVPR 2018". The code skeleton is based on "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix". If you use our code or models for academic purposes, please consider citing:
 
     @inproceedings{MDLi18,
 	  	title={MegaDepth: Learning Single-View Depth Prediction from Internet Photos},
@@ -14,6 +14,15 @@ This is an code of the algorithm described in "MegaDepth: Learning Single-View D
 #### Dependencies:
 * The code was written in Pytorch and Python 2.7, but it should be easy to adapt it to Python 3 version if needed.
 * You might need skimage, h5py libraries installed for python before running the code.
+
+#### Evaluation on Internet Photos:
+* Download pretrained model from http://www.cs.cornell.edu/projects/megadepth/dataset/models/best_generalization_net_G.pth and put it in "checkpoints/test_local/best_generalization_net_G.pth
+* In python file "models/HG_model.py", in init function, change to "model_parameters = self.load_network(model, 'G', 'best_generalization')"
+* run demo code 
+```bash
+    python rmse_error_main.py
+```
+You should see inverse depth prediction image (demo.png) of demo.jpg. If you want to use RGB for visualization, like the figures in our paper, you have to install/run semantic segmentation from https://github.com/kazuto1011/pspnet-pytorch trained on ADE20K to mask out the sky because inconsistent depth prediction of unmasked sky will not make RGB visualization resonable.
 
 
 #### Evaluation on the MegaDepth test splits:
