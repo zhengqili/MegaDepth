@@ -10,16 +10,10 @@ This is a code of the algorithm described in "MegaDepth: Learning Single-View De
 	}
 
 #### Examples of single-view depth predictions on the photos we randomly downloaded from Internet:
-
 <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo.jpg" width="300"/> <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo.png" width="300"/>
-
 <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo_img/demo_2.jpg" width="300"/> <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo_img/demo_2.png" width="300"/>
-
 <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo_img/demo_3.jpg" width="300"/> <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo_img/demo_3.png" width="300"/>
-
 <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo_img/demo_4.jpg" width="300"/> <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo_img/demo_4.png" width="300"/>
-
-
 
 #### Dependencies:
 * The code was written in Pytorch and Python 2.7, but it should be easy to adapt it to Python 3 version if needed.
