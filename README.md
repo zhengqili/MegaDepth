@@ -1,5 +1,14 @@
 # MegaDepth: Learning Single-View Depth Prediction from Internet Photos
 
+This is a code of the algorithm described in "MegaDepth: Learning Single-View Depth Prediction from Internet Photos, Z. Li and N. Snavely, CVPR 2018". The code skeleton is based on "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix". If you use our code or models for academic purposes, please consider citing:
+
+    @inproceedings{MDLi18,
+	  	title={MegaDepth: Learning Single-View Depth Prediction from Internet Photos},
+	  	author={Zhengqi Li and Noah Snavely},
+	  	booktitle={Computer Vision and Pattern Recognition (CVPR)},
+	  	year={2018}
+	}
+
 #### Examples of single-view depth predictions on the photos we randomly downloaded from Internet:
 
 <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo.jpg" width="300"/> <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo.png" width="300"/>
@@ -10,14 +19,6 @@
 
 <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo_img/demo_4.jpg" width="300"/> <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo_img/demo_4.png" width="300"/>
 
-This is a code of the algorithm described in "MegaDepth: Learning Single-View Depth Prediction from Internet Photos, Z. Li and N. Snavely, CVPR 2018". The code skeleton is based on "https://github.com/junyanz/pytorch-CycleGAN-and-pix2pix". If you use our code or models for academic purposes, please consider citing:
-
-    @inproceedings{MDLi18,
-	  	title={MegaDepth: Learning Single-View Depth Prediction from Internet Photos},
-	  	author={Zhengqi Li and Noah Snavely},
-	  	booktitle={Computer Vision and Pattern Recognition (CVPR)},
-	  	year={2018}
-	}
 
 
 #### Dependencies:
