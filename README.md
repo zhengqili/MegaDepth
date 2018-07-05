@@ -16,7 +16,7 @@ This is a code of the algorithm described in "MegaDepth: Learning Single-View De
 <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo_img/demo_4.jpg" width="300"/> <img src="https://github.com/lixx2938/MegaDepth/blob/master/demo_img/demo_4.png" width="300"/>
 
 #### Dependencies:
-* The code was written in Pytorch and Python 2.7, but it should be easy to adapt it to Python 3 version if needed.
+* The code was written in Pytorch 0.2 and Python 2.7, but it should be easy to adapt it to Python 3 and latest Pytorch version if needed.
 * You might need skimage, h5py libraries installed for python before running the code.
 
 #### Single-view depth prediction on any Internet photo:
