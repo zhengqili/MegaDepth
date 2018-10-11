@@ -41,5 +41,5 @@ You should see an inverse depth prediction saved as demo.png from an original ph
 ```bash
     python SDR_compute.py
 ```
-* If you want to run our model on arbitrary Internet photos, please download pretrained model from http://www.cs.cornell.edu/projects/megadepth/dataset/models/best_generalization_net_G.pth, which has much better generalization ability (qualitatively speaking) to completely unknown scenes.
+* If you want to run our model on arbitrary Internet photos, please download pretrained model from http://www.cs.cornell.edu/projects/megadepth/dataset/models/best_generalization_net_G.pth, which has much better generalization ability (qualitatively speaking) to completely unknown scenes (Note: for clarification, this model is for the purpose of demo and is used for more general purpose. We train the network on top of DIW pretrained weights. It should have better performance than what mentioned in the paper, if you want to compare yours with our method, you should use the number mentioned in the paper).
 
