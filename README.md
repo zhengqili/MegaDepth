@@ -20,7 +20,7 @@ This is a code of the algorithm described in "MegaDepth: Learning Single-View De
 * You might need skimage, h5py libraries installed for python before running the code.
 
 #### Single-view depth prediction on any Internet photo:
-* Download pretrained model from: http://www.cs.cornell.edu/projects/megadepth/dataset/models/best_generalization_net_G.pth and put it in "checkpoints/test_local/best_generalization_net_G.pth
+* Download pretrained models from: http://www.cs.cornell.edu/projects/megadepth/dataset/models/best_generalization_net_G.pth and put it in "checkpoints/test_local/best_generalization_net_G.pth
 * In python file "models/HG_model.py", in init function, change to "model_parameters = self.load_network(model, 'G', 'best_generalization')"
 * run demo code 
 ```bash
@@ -32,7 +32,9 @@ You should see an inverse depth prediction saved as demo.png from an original ph
 #### Evaluation on the MegaDepth test splits:
 * Download MegaDepth V1 dataset from project website: http://www.cs.cornell.edu/projects/megadepth/.
 * Download pretrained model (specific for MD dataset) from http://www.cs.cornell.edu/projects/megadepth/dataset/models/best_vanila_net_G.pth and put it in "checkpoints/test_local/best_vanila_net_G.pth" 
+* Updated: You might also consider downloading extra 4 pretrained models from (See README and our website for explanations): http://www.cs.cornell.edu/projects/megadepth/dataset/models/test_model_1_4.zip
 * Download test list files from http://www.cs.cornell.edu/projects/megadepth/dataset/data_lists/test_lists.tar.gz, it should include two folders corresponding to images with landscape and portrait orientations.
+* Download precomputed sparse features from http://www.cs.cornell.edu/projects/megadepth/dataset/Megadepth_v1/sparse_features.zip
 * To compute scale invarance RMSE on MD testset, change the variable "dataset_root" in python file "rmse_error_main.py" to the root directory of MegaDepth_v1 folder, and change variable "test_list_dir_l" and "test_list_dir_p" to corresponding folder paths of test lists, and run:
 ```bash
     python rmse_error_main.py
@@ -41,5 +43,5 @@ You should see an inverse depth prediction saved as demo.png from an original ph
 ```bash
     python SDR_compute.py
 ```
-* If you want to run our model on arbitrary Internet photos, please download pretrained model from http://www.cs.cornell.edu/projects/megadepth/dataset/models/best_generalization_net_G.pth, which has much better generalization ability (qualitatively speaking) to completely unknown scenes (Note: for clarification, this model is for the purpose of demo and is used for more general purpose. We trained the network on top of DIW pretrained weights. It should have better performance than what was described in the paper, if you want to compare yours with our method, you should use the models 'MegaDepth Pretrained models as described in our updated paper' in our webste: http://www.cs.cornell.edu/projects/megadepth/).
+* If you want to run our model on arbitrary Internet photos, please download pretrained model from http://www.cs.cornell.edu/projects/megadepth/dataset/models/best_generalization_net_G.pth, which has much better generalization ability to completely unknown scenes (Note: for clarification, this model is for the purpose of demo and is used for more general purpose. We trained the network on top of DIW pretrained weights. It might have better performance than what was described in the paper, if you want to compare yours with our method, you might use the models 'MegaDepth Pretrained models as described in our updated paper' in our webste: http://www.cs.cornell.edu/projects/megadepth/).
 
